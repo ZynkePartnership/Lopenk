@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(196, 4, 196);
+    padding: 10px 20px 15px 20px;
+    /* Foi realizado um shorthand dentro do preechimento para facilitar o desenvolvimento */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.person {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.person-image {
+    width: 2.2rem;
+    height: auto;
+    padding-bottom: 10px;
+    background-color: white;
+    opacity: .7;
+    border-radius: 20%;
+    margin-bottom: 15px;
+}
+
+.person p {
+    font-weight: 600;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons img {
+    width: 2.2rem;
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+section.saldo {
+    margin: 20px;
+}
+
+section.saldo h2 {
+    margin-bottom: 15px;
+}
+
+section.cartoes {
+    background-color: #60606059;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+footer .icons {
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+footer .icons img {
+    gap: 10px;
+}
+
