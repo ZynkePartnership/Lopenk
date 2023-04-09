@@ -7,7 +7,7 @@
 }
 
 header {
-    background-color: rgb(196, 4, 196);
+    background-color: #ce13ce;
     padding: 10px 20px 15px 20px;
     /* Foi realizado um shorthand dentro do preechimento para facilitar o desenvolvimento */
     display: flex;
@@ -27,7 +27,6 @@ header {
     width: 2.2rem;
     height: auto;
     padding-bottom: 10px;
-    border-radius: 20%;
     margin-bottom: 15px;
     filter: invert();
 }
@@ -57,6 +56,28 @@ section.saldo {
 
 section.saldo h2 {
     margin-bottom: 15px;
+}
+
+section.saldo p {
+    font-weight: 600;
+}
+
+section.carrossel {
+    display: flex;
+}
+
+.pix,
+.payment,
+.transferencia {
+    width: 70px;
+    height: 70px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+section.carrossel .pix img {
+    width: 70px;
+    height: 70px;
 }
 
 section.cartoes {
