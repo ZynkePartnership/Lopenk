@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+}
+
 header {
     background-color: #ce13ce;
     padding: 10px 20px 15px 20px;
@@ -17,7 +23,6 @@ header {
 }
 
 .person {
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,6 +38,7 @@ header {
 
 .person p {
     font-weight: 600;
+    color: white;
 }
 
 .icons {
@@ -71,10 +77,14 @@ section.carrossel {
 .payment,
 .transferencia,
 .recarga {
+    display: flex;
+    margin: auto;
     width: 70px;
     height: 70px;
-    border: 1px solid red;
     border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: #cec4c463;
+    cursor: pointer;
 }
 
 .pix-group,
@@ -86,34 +96,92 @@ section.carrossel {
 }
 
 section.carrossel .pix img {
-    width: 70px;
-    height: 70px;
+    display: block;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+}
+
+section.carrossel .payment img {
+    display: block;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+}
+
+section.carrossel .transferencia img {
+    display: block;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+}
+
+section.carrossel .recarga img {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
 }
 
 section.cartoes {
     background-color: #60606059;
     padding: 20px;
     margin: 20px;
-    border-radius: 20px;
+    border-radius: 12px;
+}
+
+section .informations {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+section .information {
+    background-color: #60606059;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+section .information p span {
+    color: purple;
+    font-weight: 500;
+}
+
+.border {
+    border: .1px solid rgba(0, 0, 0, 0.438);
+}
+
+section.cred {
+    margin: 10px;
+}
+
+.cred-text h2 {
+    margin-bottom: 5px;
+}
+
+.cred-money {
+    margin-top: 5px;
+}
+
+.cred-money p {
+    opacity: .7;
 }
 
 footer {
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
-    position: fixed;
-    width: 100%;
+    /* position: fixed; */
+    /* width: 100%; */
     text-align: center;
-    justify-content: center;
-    align-items: center;
     padding-bottom: 10px;
 }
 
-footer .icons {
+footer .icons-menu {
     background-color: whitesmoke;
     border-radius: 20px;
 }
 
-footer .icons img {
-    gap: 10px;
+footer .icons-menu img {
+    width: 2rem;
 }
 
