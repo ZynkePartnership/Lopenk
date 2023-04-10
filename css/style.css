@@ -49,7 +49,7 @@ header {
 }
 
 .icons img {
-    width: 2.2rem;
+    width: 2rem;
     height: auto;
     margin-right: 10px;
     cursor: pointer;
@@ -168,20 +168,28 @@ section.cred {
 }
 
 footer {
-    /* position: absolute; */
     bottom: 0;
-    /* position: fixed; */
-    /* width: 100%; */
     text-align: center;
     padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer .icons-menu {
-    background-color: whitesmoke;
+    width: 150px;
     border-radius: 20px;
+    background-color: rgb(224, 217, 217);
 }
 
 footer .icons-menu img {
     width: 2rem;
+    margin-right: 10px;
+    text-align: center;
+}
+
+footer .icons-menu .selecionado {
+    background-color: purple;
+    border-radius: 50%;
 }
 
