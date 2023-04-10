@@ -64,15 +64,25 @@ section.saldo p {
 
 section.carrossel {
     display: flex;
+    margin: 25px;
 }
 
 .pix,
 .payment,
-.transferencia {
+.transferencia,
+.recarga {
     width: 70px;
     height: 70px;
     border: 1px solid red;
     border-radius: 50%;
+}
+
+.pix-group,
+.payment-group,
+.transferencia-group,
+.recarga-group {
+    text-align: center;
+    margin-right: 10px;
 }
 
 section.carrossel .pix img {
