@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #ffffff;
+    --color-purple: #9e199e;
+    --color-gray: #cec4c463;
+}
+
+body {
+    /* overflow-y: hidden; */
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: var(--color-purple);
+    padding: 10px 20px 15px 20px;
+    /* Foi realizado um shorthand dentro do preechimento para facilitar o desenvolvimento */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.person-image {
+    width: 2.2rem;
+    height: auto;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    filter: invert();
+}
+
+.person p {
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert();
+}
+
+.icons img {
+    width: 2rem;
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+section.saldo {
+    margin: 20px;
+}
+
+section.saldo h2 {
+    margin-bottom: 15px;
+}
+
+section.saldo p {
+    font-weight: 600;
+}
+
+section.carrossel {
+    display: flex;
+    margin: 25px;
+}
+
+.pix,
+.payment,
+.transferencia,
+.recarga {
+    display: flex;
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: var(--color-gray);
+    cursor: pointer;
+}
+
+.pix-group,
+.payment-group,
+.transferencia-group,
+.recarga-group {
+    text-align: center;
+    margin-right: 10px;
+}
+
+section.carrossel .pix img {
+    display: block;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+}
+
+section.carrossel .payment img {
+    display: block;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+}
+
+section.carrossel .transferencia img {
+    display: block;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+}
+
+section.carrossel .recarga img {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+section.cartoes {
+    background-color: #60606059;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+}
+
+section .card {
+    display: flex;
+    align-items: center;
+}
+
+section .card p {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+section .informations {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+section .information {
+    background-color: #60606059;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+section .information p span {
+    color: purple;
+    font-weight: 500;
+}
+
+.border {
+    border: .1px solid rgba(0, 0, 0, 0.438);
+}
+
+section.cred,
+section.informations-two {
+    margin: 10px;
+}
+
+.cred-text h2,
+.informations-two h2 {
+    margin-bottom: 5px;
+}
+
+.cred-money {
+    margin-top: 5px;
+}
+
+.cred-money p {
+    opacity: .7;
+}
+
+.information-two {
+    background-color: #60606059;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+}
+
+section .information-two {
+    display: flex;
+    align-items: center;
+}
+
+section .information-two p {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .icons-menu {
+    width: 150px;
+    border-radius: 20px;
+    background-color: rgb(224, 217, 217);
+}
+
+footer .icons-menu img {
+    width: 2rem;
+    margin-right: 11px;
+    text-align: center;
+}
+
+footer .icons-menu .selecionado {
+    background-color: purple;
+    border-radius: 50%;
+}
