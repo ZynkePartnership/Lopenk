@@ -8,6 +8,7 @@
 
 :root {
     --color-white: #ffffff;
+    --color-black: #000000da;
     --color-purple: #9e199e;
     --color-gray: #cec4c463;
 }
@@ -232,5 +233,19 @@ footer .icons-menu img {
 footer .icons-menu .selecionado {
     background-color: purple;
     border-radius: 50%;
+}
+
+#dark-mode {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+#dark-mode section.carrossel .pix img,
+#dark-mode section.carrossel .payment img,
+#dark-mode section.carrossel .transferencia img,
+#dark-mode section.carrossel .recarga img,
+#dark-mode section.cartoes .card img,
+#dark-mode section.informations-two .information-two img{
+    filter: invert();
 }
 
