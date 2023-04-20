@@ -219,6 +219,7 @@ footer .icons-menu {
     width: 150px;
     border-radius: 20px;
     background-color: rgb(224, 217, 217);
+    max-width: 100%;
     
     padding: 5px 5px 5px 5px;
 }
