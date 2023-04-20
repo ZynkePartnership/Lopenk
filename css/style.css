@@ -217,15 +217,20 @@ footer .icons-menu {
     width: 150px;
     border-radius: 20px;
     background-color: rgb(224, 217, 217);
+    
+    padding: 5px 5px 5px 5px;
 }
 
 footer .icons-menu img {
     width: 2rem;
-    margin-right: 11px;
+    margin-right: 12px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 footer .icons-menu .selecionado {
     background-color: purple;
     border-radius: 50%;
 }
+
