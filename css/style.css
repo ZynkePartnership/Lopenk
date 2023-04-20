@@ -8,7 +8,7 @@
 
 :root {
     --color-white: #ffffff;
-    --color-black: #000000da;
+    --color-black: #000000;
     --color-purple: #9e199e;
     --color-purple-dark: #ff34ff;
     --color-gray: #cec4c463;
@@ -257,5 +257,9 @@ footer .icons-menu .selecionado {
 
 #dark-mode section.informations .information p span {
     color: var(--color-purple-dark);
+}
+
+#dark-mode .border {
+    border: 1px var(--color-gray) solid;
 }
 
