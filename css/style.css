@@ -12,6 +12,9 @@
     --color-purple: #9e199e;
     --color-purple-dark: #ff34ff;
     --color-gray: #cec4c463;
+    --switch-bg-url: url(/assets/moon-starts.svg);
+    --surface-color: rgba(255, 255, 255, 0.05);
+    --stroke-color: rgba(255, 255, 255, 0.5);
 }
 
 body {
@@ -73,6 +76,37 @@ section.saldo h2 {
 
 section.saldo p {
     font-weight: 600;
+}
+
+section#switch {
+    position: relative;
+    width: 64px;
+    margin: 4px auto;
+}
+
+section#switch button {
+    width: 32px;
+    height: 32px;
+    background: var(--color-white) var(--switch-bg-url) no-repeat center;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    animation: slide-back 0.2s;
+}
+
+section#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
 }
 
 section.carrossel {
