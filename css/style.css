@@ -10,6 +10,7 @@
     --color-white: #ffffff;
     --color-black: #000000da;
     --color-purple: #9e199e;
+    --color-purple-dark: #ff34ff;
     --color-gray: #cec4c463;
 }
 
@@ -245,7 +246,15 @@ footer .icons-menu .selecionado {
 #dark-mode section.carrossel .transferencia img,
 #dark-mode section.carrossel .recarga img,
 #dark-mode section.cartoes .card img,
-#dark-mode section.informations-two .information-two img{
+#dark-mode section.informations-two .information-two img {
     filter: invert();
+}
+
+#dark-mode section.carrossel .pix img {
+    mix-blend-mode: color-dodge;
+}
+
+#dark-mode section.informations .information p span {
+    color: var(--color-purple-dark);
 }
 
